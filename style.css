@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,400&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: beige;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 500px;
+    background: url(./images/header.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header--fadeButtom {
+    width: 100%;
+    height: 8rem;
+    margin-top: 67px;
+    background-image: linear-gradient(180deg, transparent, rgba(23, 9, 3, .8), #180a03);
+}
+
+nav {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+nav .logo {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+nav .logo .span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 18px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon div {
+    width: 24px;
+    height: 2px;
+    background-color: antiquewhite;
+    margin-top: 5px;
+    transition: all .5s ease;
+}
+
+.hero-section {
+    margin-top: 6rem;
+    padding: 0px 50px;
+}
+
+.hero-section .h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.hero-section .h1  .span-1 {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+}
+
+.hero-section p span {
+    font-weight: bolder;
+}
+
+.hero-section a {
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid;
+    font-size: 12px;
+    padding: 10px 20px;
+}
+
+main {
+    background-color: #160807;
+    padding-top: 4rem;
+}
+main .story {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    padding: 0px 60px;
+    margin-bottom: 5rem;
+}
+
+main .story .left {
+    width: 50%;
+    display: flex;
+}
+
+main .story .left .slider {
+    object-fit: cover;
+    width: 350px;
+    height: 300px;
+    z-index: 2;
+    position: relative;
+    top: -2rem;
+}
+
+main .story .left .transparent-border {
+    width: 100px;
+    height: 100px;
+    border: solid 2px #7c5839;
+    z-index: 1;
+    position: relative;
+    top: 11rem;
+    right: 4rem;
+}
+
+main .story .left .balls {
+    display: flex;
+    margin-top: 17rem;
+    margin-left: -22rem;
+}
+
+main .story .left .balls div {
+    width: 10px;
+    height: 10px;
+    background-color: #7c5839;
+    margin: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+main .story .right {
+    width: 50%;
+    text-align: right;
+}
+
+main .story .right .solid-border {
+    width: 70px;
+    height: 70px;
+    background-color: #7c5839;
+    position: relative;
+    left: 34rem;
+    margin-bottom: 1.5rem;
+}
+
+main .story .right h3 {
+    font-size: 32px;
+    margin-bottom: 1.5rem;
+}
+
+main .story .right h3 span {
+    font-weight: 300;
+}
+
+main .favourites {
+    width: 100%;
+    height: 300px;
+}
+
+main .favourites .title {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 900;
+}
+
+main .favourites .wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.5rem;
+    margin-left: -5rem;
+}
+
+main .favourites .wrap .small-transparent-border {
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    border: 2px solid #7c5839;
+    position: relative;
+    margin-top: 5rem;
+    left: 5rem;
+    top: 3rem;
+}
+
+main .favourites .wrap .small-solid-border {
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    background-color: #7c5839;
+    position: relative;
+    margin-top: -10rem;
+    left: 45rem;
+}
+
+main .favourites .wrap .images {
+    z-index: 3;
+}
+
+main .favourites .wrap img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+}
+
+main .shop {
+    width: 100%;
+    height: 500px;
+    padding: 0px 40px;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .shop .sho {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+main .shop .sho h4 {
+    margin-bottom: 1.5rem;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+main .shop .sho p {
+    width: 500px;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+main .shop div {
+    width: 50%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+main .shop div .top {
+    width: 180px;
+    height: 140px;
+    border: 2px solid #7c5839;
+    z-index: 1;
+    position: relative;
+    left: 22rem;
+    top: -14rem;
+}
+
+main .shop div .bottom {
+    width: 80px;
+    height: 70px;
+    position: relative;
+    left: -12rem;
+    top: 2rem;
+    background-color: #7c5839;
+    z-index: 3;
+}
+
+main .shop .tiki {
+    z-index: 2;
+    position: relative;
+    left: -5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+main .shop .tiki .shop-1 {
+    object-fit: cover;
+    width: 300px;
+    height: 200px;
+    margin-left: -4rem;
+    position: relative;
+    left: -2rem;
+}
+main .shop .tiki .shop-3 {
+    object-fit: cover;
+    width: 550px;
+    height: 300px;
+}
+
+footer {
+    background-color: #7c5939;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .left .text {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer .left ul {
+    display: flex;
+}
+
+footer .left ul li {
+    list-style: none;
+}
+footer .left ul li a {
+    padding: 10px;
+    text-decoration: none;
+}
+
+footer .right .text {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer .right ul {
+    display: flex;
+}
+
+footer .right ul li {
+    list-style: none;
+}
+
+footer .right ul li img {
+    padding: 5px 10px;
+    filter: invert(1);
+    object-fit: contain;
+    height: 30px;
+}
+
+@media (max-width: 1024px) {
+    body {
+        width: 100vw;
+    }
+
+    .container {
+        width: 1024px;
+    }
+
+    header {
+        width: 1024px;
+    }
+
+    main {
+        width: 1024px;
+    }
+
+    main .story .right .solid-border {
+        left: 24rem;
+    }
+
+    main .shop div .top {
+        left: 15rem;
+    }
+
+    main .shop .tiki .shop-1 {
+        width: 250px;
+        height: 200px;
+    }
+
+    main .shop .sho p {
+        width: 400px;
+    }
+
+    main .shop div .bottom {
+        left: -14rem;
+    }
+
+    footer {
+        width: 1024px;
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 425px;
+    }
+
+    header {
+        width: 425px;
+        /* padding: 0px; */
+    }
+    nav {
+        width: 425px;
+    }
+    .navbar {
+        position: absolute;
+        left: 0px;
+        height: 50vh;
+        top: 0vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: brown;
+        width: 50%;
+        transform: translateX(-101%);
+        transition: all .4s ease;
+        padding-top: 4rem;
+    }
+
+    .navbar li {
+        height: 100vh;
+    }
+
+    .navbar-active {
+        transform: translateX(0%);
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-icon-active .top {
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+
+    .menu-icon-active .middle {
+        opacity: 0;
+    }
+
+    .menu-icon-active .bottom {
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+
+    main {
+        width: 425px;
+    }
+
+    main .story {
+        flex-direction: column;
+        height: 600px;
+    }
+
+    main .story .left .slider {
+        left: -2rem;
+    }
+
+    main .story .left .balls {
+        margin-top: 19rem;
+    }
+
+    main .story .left .transparent-border {
+        top: 13rem;
+    }
+
+    main .story .right {
+        margin-top: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    main .story .right .solid-border {
+        display: none;
+    }
+
+    main .favourites {
+        width: 100%;
+        height: 450px;
+        padding-top: 2rem;
+    }
+
+    main .favourites .wrap .images {
+        z-index: 3;
+        position: relative;
+        top: -2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: -1rem;
+    }
+
+    main .favourites .wrap img {
+        object-fit: cover;
+        width: 170px;
+        height: 170px;
+        margin-left: 20px;
+        padding-bottom: 22px;
+    }
+
+    main .favourites .wrap .small-solid-border {
+        z-index: 2;
+        width: 70px;
+        height: 60px;
+        background-color: #7c5839;
+        position: relative;
+        margin-top: -25rem;
+        left: 26rem;
+    }
+
+    main .favourites .wrap .small-transparent-border {
+        z-index: 1;
+        width: 70px;
+        height: 70px;
+        border: 2px solid #7c5839;
+        position: relative;
+        margin-top: 5rem;
+        left: 6rem;
+        top: 4rem;
+    }
+
+    main .shop {
+        flex-direction: column;
+        height: 640px;
+        padding-top: 0;
+        margin-top: -2rem;
+    }
+
+    main .shop .sho {
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    main .shop .sho h4 {
+        margin: 15px auto;
+    }
+
+    main .shop .sho p {
+        width: 350px;
+    }
+
+    main .shop .tiki .shop-3 {
+        display: none;
+    }
+
+    main .shop .tiki .shop-1 {
+        margin-left: 9rem;
+        margin-top: -4rem;
+    }
+
+    main .shop div .bottom {
+        left: -7rem;
+        width: 400px;
+        height: 50px;
+    }
+
+    main .shop div .top {
+        left: 12rem;
+        top: -9rem;
+        width: 480px;
+        height: 100px;
+    }
+
+    footer {
+        width: 425px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        width: 100vw;
+    }
+    .container {
+        width: 375px;
+    }
+    header {
+        width: 375px;
+    }
+    header nav {
+        width: 375px;
+    }
+    main {
+        width: 375px;
+    }
+    main .story .left .transparent-border {
+        right: 4.5rem;
+    }
+    main .story .left .slider {
+        left: -3rem;
+    }
+    main .favourites {
+        height: 500px;
+    }
+    main .favourites .title {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 900;
+        margin-top: 3.4rem;
+    }
+    main .favourites .wrap {
+        margin-top: 0rem;
+    }
+    main .favourites .wrap .images {
+        top: 2rem;
+    }
+    main .favourites .wrap img {
+        object-fit: cover;
+        width: 170px;
+        height: 170px;
+        margin-left: 10px;
+        margin-right: -5px;
+        padding-bottom: 12px;
+    }
+    main .favourites .wrap .small-transparent-border {
+        margin-top: 14rem;
+        left: 5.5rem;
+    }
+    main .favourites .wrap .small-solid-border {
+        z-index: 2;
+        width: 70px;
+        height: 60px;
+        background-color: #7c5839;
+        position: relative;
+        margin-top: -17rem;
+        left: 23.5rem;
+    }
+    main .shop .sho p {
+        width: 300px;
+        height: 60px;
+    }
+    footer {
+        width: 375px;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        width: 100vw;
+    }
+    .container {
+        width: 320px;
+    }
+    header {
+        width: 320px;
+    }
+    header nav {
+        width: 320px;
+    }
+    main {
+        width: 320px;
+    }
+    main .story {
+        flex-direction: column;
+        height: 700px;
+    }
+    main .story .left .slider {
+        object-fit: cover;
+        width: 269px;
+        height: 300px;
+        z-index: 2;
+        position: relative;
+        top: -2rem;
+    }
+    main .story .left .transparent-border {
+        right: 6.5rem;
+    }
+    main .favourites {
+        height: 900px;
+    }
+    main .favourites .wrap .small-transparent-border {
+        display: none;
+    }
+    main .favourites .wrap .small-solid-border {
+        display: none;
+    }
+    main .favourites .wrap img {
+        object-fit: cover;
+        width: 250px;
+        height: 190px;
+    }
+    main .favourites .wrap .images {
+        margin-left: 3.8rem;
+    }
+    main .shop .sho p {
+        width: 250px;
+        height: 102px;
+    }
+    main .shop div .top {
+        left: 10rem;
+        top: -10rem;
+        width: 480px;
+        height: 60px;
+    }
+    main .shop div .bottom {
+        left: -7rem;
+        width: 600px;
+        height: 50px;
+    }
+    footer {
+        width: 320px;
+    }
+}
